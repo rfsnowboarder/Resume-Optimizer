@@ -13,7 +13,7 @@ A Python web app that compares your resume against a job description, identifies
 
 I built this project to solve a recurring problem in my own job search: spending time on applications that turned out to be a poor match, often because I lacked specific required experience. My goal was to reduce that wasted time by quickly identifying which job postings genuinely align with my skill set, and to generate tailored resume rewrites that better match each job description for the applications I do pursue.
 
-I chose this approach because I wanted a project that would keep providing value after I built it — not just a portfolio piece, but a tool I'd actually use in my day-to-day job search. Along the way, I also wanted to improve at writing a stronger, more tailored resume, while saving time by filtering out applications I could quickly identify as bad fits.
+I chose this approach because I wanted a project that would keep providing value after I built it; not just a portfolio piece, but a tool I'd actually use in my day-to-day job search. Along the way, I also wanted to improve at writing a stronger, more tailored resume, while saving time by filtering out applications I could quickly identify as bad fits.
 
 ---
 
