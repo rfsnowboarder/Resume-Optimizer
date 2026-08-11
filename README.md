@@ -2,7 +2,7 @@
 
 A Python web app that compares your resume against a job description, identifies skill gaps, checks ATS (Applicant Tracking System) formatting compatibility, generates AI-powered rewrite suggestions, and tracks trends across your job search using a local SQL database.
 
-**[Live demo →](#)** *(link once deployed)*
+**[Live demo →](#)** [*(link once deployed)*](https://ryan-farrell-resume-optimizer.streamlit.app/)
 
 
 https://github.com/user-attachments/assets/c75fa1f4-19e6-4278-950c-6c6c104c1e25
