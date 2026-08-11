@@ -21,7 +21,7 @@ I chose this approach because I wanted a project that would keep providing value
 
 - **Skill Gap Matching** — Extracts and compares skills/keywords between your resume and a job description, with a match score
 - **ATS Formatting Checks** — Rule-based detection of common issues that trip up real Applicant Tracking Systems (missing sections, missing contact info, layout artifacts)
-- **AI-Powered Feedback** — Uses the Claude API to assess experience-level fit and generate tailored, truthful rewrite suggestions (with guardrails against fabricating experience)
+- **AI-Powered Feedback** — Uses the Claude API to assess experience-level fit and generate tailored, truthful rewrite suggestions (with guardrails against making up experience)
 - **Job Search Analytics** — Every comparison is logged to a local SQLite database; a dashboard shows match score trends over time and your most frequently missing skills, powered by SQL queries and pandas
 
 ---
