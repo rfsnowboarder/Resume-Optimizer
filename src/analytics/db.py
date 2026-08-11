@@ -11,27 +11,28 @@ your project folder.
 
 import os
 import sqlite3
+import tempfile
 from datetime import datetime
 
 import pandas as pd
 
-DB_PATH = "db/history.db"
+# Streamlit Cloud's app source folder is read-only, so we can't write a
+# database file there. Python's temp directory is always writable, both
+# locally and on Streamlit Cloud, so we use that instead.
+#
+# Note: on Streamlit Cloud, this means history resets whenever the app
+# restarts/sleeps — that's expected and fine for a public demo. Your
+# real job-search tracking should happen on your local copy of the app,
+# where this same temp-directory approach still works but tends to
+# persist much longer between restarts.
+DB_PATH = os.path.join(tempfile.gettempdir(), "resume_optimizer_history.db")
 
 
 def init_db(db_path: str = DB_PATH) -> None:
     """
     Creates the history table if it doesn't already exist. Safe to call
     every time the app starts — it won't wipe existing data.
-
-    Also creates the containing folder if it doesn't exist yet. This
-    matters for deployment: an empty folder isn't tracked by git, so a
-    fresh deploy (e.g. Streamlit Cloud) won't have the `db/` folder at
-    all until this code creates it.
     """
-    folder = os.path.dirname(db_path)
-    if folder:
-        os.makedirs(folder, exist_ok=True)
-
     conn = sqlite3.connect(db_path)
     conn.execute(
         """
