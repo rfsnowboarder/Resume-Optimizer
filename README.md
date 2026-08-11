@@ -113,7 +113,7 @@ pytest
 
 ## What I'd Do With More Time
 
-• Auto-rewrite resume lines to close skill gaps; identify the most common missing skill across my job comparisons and use AI to rewrite my existing bullet points to authentically highlight it.
+• Auto-rewrite resume lines in order to close skill gaps; identify the most common missing skill across my job comparisons and use AI to rewrite my existing bullet points to highlight it using my real experience.
 
 • Distinguish experience depth; right now the tool doesn't tell the difference between 5+ years of professional Python or SQL experience and my own experience, which comes mostly from coursework and personal projects.
 
