@@ -113,7 +113,11 @@ pytest
 
 ## What I'd Do With More Time
 
-*(Good spot to list 2-3 honest next steps — shows self-awareness and forward thinking, which reviewers like. E.g. semantic/synonym-aware matching instead of exact keyword match, multi-resume comparison, exporting tailored resume versions, etc.)*
+• Auto-rewrite resume lines to close skill gaps; identify the most common missing skill across my job comparisons and use AI to rewrite my existing bullet points to authentically highlight it.
+
+• Distinguish experience depth; right now the tool doesn't tell the difference between 5+ years of professional Python or SQL experience and my own experience, which comes mostly from coursework and personal projects.
+
+• Catch more than exact keyword matches; a line like "I trained new employees by having them shadow me and gave them feedback and hands-on experience" clearly shows leadership, but keyword matching would miss it since it never says the word "leadership."
 
 ---
 
