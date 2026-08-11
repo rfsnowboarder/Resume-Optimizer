@@ -4,8 +4,9 @@ A Python web app that compares your resume against a job description, identifies
 
 **[Live demo →](#)** *(link once deployed)*
 
-![App screenshot placeholder](docs/screenshot.png)
-*(Add a screenshot or GIF of the app here once you have one — this matters a lot for first impressions.)*
+
+https://github.com/user-attachments/assets/c75fa1f4-19e6-4278-950c-6c6c104c1e25
+
 
 ---
 
