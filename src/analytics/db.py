@@ -9,6 +9,7 @@ It stores everything in a single file (db/history.db) that lives in
 your project folder.
 """
 
+import os
 import sqlite3
 from datetime import datetime
 
@@ -21,7 +22,16 @@ def init_db(db_path: str = DB_PATH) -> None:
     """
     Creates the history table if it doesn't already exist. Safe to call
     every time the app starts — it won't wipe existing data.
+
+    Also creates the containing folder if it doesn't exist yet. This
+    matters for deployment: an empty folder isn't tracked by git, so a
+    fresh deploy (e.g. Streamlit Cloud) won't have the `db/` folder at
+    all until this code creates it.
     """
+    folder = os.path.dirname(db_path)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
+
     conn = sqlite3.connect(db_path)
     conn.execute(
         """
